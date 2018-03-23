@@ -13,7 +13,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === 'nepgya') {
-    	message.reply('NEPGYAHHH !');
+    	message.channel.send('NEPGYAHHH ! （＊〇□〇)');
   	}
 });
 
