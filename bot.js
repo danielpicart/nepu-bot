@@ -4,16 +4,22 @@ const client = new Discord.Client();
 client.on('ready', () => {
     console.log('Nepu les gens !');
 });
-
+//msg1
 client.on('message', message => {
     if (message.content === 'nepu') {
     	message.channel.send('NEPU NEPU !');
   	}
 });
-
+//msg2
 client.on('message', message => {
     if (message.content === 'nepgya') {
     	message.channel.send('NEPGYAHHH ! （＊〇□〇)');
+  	}
+});
+//help
+client.on('message', message => {
+    if (message.content === 'help') {
+    	message.channel.send('nepu, nepgya, comehere');
   	}
 });
 
