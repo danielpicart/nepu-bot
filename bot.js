@@ -4,7 +4,6 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('Nepu les gens !');
-    message.channel.send("Nepu les gens !!! 'nephelp' pour les commandes !");
 });
 
 //msg1
@@ -28,7 +27,10 @@ client.on('message', message => {
   	}
 });
 
-client.login(process.env.BOT_TOKEN);
+//arrivée d'un membre
+client.on('guildMemberAdd', member => {
+    channel.send(`Nepu ! ${member}, 'nephelp' pour avoir la liste des commandes`);
+});
 
 //connection channel vocal
 client.on('message', message => {
@@ -50,3 +52,5 @@ client.on('message', message => {
     }
   }
 });
+
+client.login(process.env.BOT_TOKEN);
