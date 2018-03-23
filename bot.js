@@ -23,7 +23,7 @@ client.on('message', message => {
 //help
 client.on('message', message => {
     if (message.content === 'help') {
-    	message.channel.send('nepu, nepgya, comehere');
+    	message.channel.send('nepu, nepgya, nepcome');
   	}
 });
 
