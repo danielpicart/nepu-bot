@@ -4,26 +4,27 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('Nepu les gens !');
+    message.channel.send("Nepu les gens !!! 'nephelp' pour les commandes !");
 });
 
 //msg1
 client.on('message', message => {
     if (message.content === 'nepu') {
-    	message.channel.send('NEP NEP !');
+    	message.channel.send('NEP NEP !!');
   	}
 });
 
 //msg2
 client.on('message', message => {
     if (message.content === 'nepgya') {
-    	message.channel.send('NEPGYAHHH ! （＊〇□〇)');
+    	message.channel.send('NEPGYYAAAAHHHHH !!! ヾ(@゜∇゜@)ノ');
   	}
 });
 
 //help
 client.on('message', message => {
-    if (message.content === 'help') {
-    	message.channel.send('nepu, nepgya, nepcome');
+    if (message.content === 'nephelp') {
+    	message.channel.send('nephelp, nepu, nepgya, nepcome.');
   	}
 });
 
