@@ -41,7 +41,7 @@ client.on('message', message => {
         })
         .catch(console.log);
     } else {
-      message.reply("Nepu ! Rejoins d'abord un channel");
+      message.reply("Nepu ! Rejoins d'abord un channel !");
     }
   }
 });
