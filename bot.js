@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const dispatcher = connection.playFile('nepu-bot/song/nepupu.mp3');
 
 client.on('ready', () => {
     console.log('Nepu les gens !');
