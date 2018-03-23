@@ -25,7 +25,7 @@ client.on('message', message => {
 
 
 client.login(process.env.BOT_TOKEN);
-var dispatcher = connection.playFile('/song/nepupu.mp3');
+
 client.on('message', message => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
@@ -37,7 +37,7 @@ client.on('message', message => {
       message.member.voiceChannel.join()
         .then(connection => { // Connection is an instance of VoiceConnection
           message.reply('NEPU ! Me voici !');
-          dispatcher.resume();
+          const dispatcher = connection.playFile('/song/nepupu.mp3');
           
         })
         .catch(console.log);
