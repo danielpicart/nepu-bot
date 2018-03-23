@@ -8,7 +8,7 @@ client.on('ready', () => {
 //msg1
 client.on('message', message => {
     if (message.content === 'nepu') {
-    	message.channel.send('NEPU NEPU !');
+    	message.channel.send('NEP NEP !');
   	}
 });
 //msg2
@@ -35,13 +35,9 @@ client.on('message', message => {
   if (message.content === 'comehere') {
     // Only try to join the sender's voice channel if they are in one themselves
     if (message.member.voiceChannel) {
-        
-        const ytdl = require('ytdl-core');
-        const streamOptions = { seek: 0, volume: 1 };
-        
       message.member.voiceChannel.join()
         .then(connection => { // Connection is an instance of VoiceConnection
-          message.reply('NEPU !! Me voilà !');
+          message.reply('Me voilà !');
 
 });
         })
