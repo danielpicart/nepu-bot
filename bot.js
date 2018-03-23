@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const ytdl = require('ytdl-core');
+const streamOptions = { seek: 0, volume: 1 };
 
 client.on('ready', () => {
     console.log('Nepu les gens !');
@@ -36,8 +38,9 @@ client.on('message', message => {
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
         .then(connection => { // Connection is an instance of VoiceConnection
-          message.reply('NEPU ! Me voici !');
-          connection.playFile('nepu-bot/song/nepupu.mp3');
+          message.reply('NEPUPOOONN TIMMMMME !!!');
+          const stream = ytdl('https://youtu.be/IeIJRRw7xcg', { filter : 'audioonly' });
+          const dispatcher = connection.playStream(stream, streamOptions);
 
 });
         })
