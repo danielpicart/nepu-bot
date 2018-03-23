@@ -26,11 +26,6 @@ client.on('message', message => {
 
 client.login(process.env.BOT_TOKEN);
 
-dispatcher.on('error', e => {
-  // Catch any errors that may arise
-  message.channel.send('marche pas :/');
-});
-
 client.on('message', message => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
@@ -43,7 +38,10 @@ client.on('message', message => {
         .then(connection => { // Connection is an instance of VoiceConnection
           message.reply('NEPU ! Me voici !');
           const dispatcher = connection.playFile('nepu-bot/song/nepupu.mp3');
-          
+          dispatcher.on('error', e => {
+             // Catch any errors that may arise
+            message.channel.send('marche pas :/');
+});
         })
         .catch(console.log);
     } else {
