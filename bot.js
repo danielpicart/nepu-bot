@@ -26,8 +26,6 @@ client.on('message', message => {
 
 client.login(process.env.BOT_TOKEN);
 
-const dispatcher = connection.playFile('nepu-bot/song/nepupu.mp3');
-
 client.on('message', message => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
