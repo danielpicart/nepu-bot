@@ -11,11 +11,6 @@
     "request": "2.81.0",
     "node-opus": "0.2.7",
     "ffmpeg-binaries": "3.2.2-3",
-    "html-entities": "1.2.1",
-    "m3u8stream": "0.2.2",
-    "miniget": "1.2.0",
-    "sax": "1.2.4",
-    "ytdl-core": "0.20.2"
     
   }
 }
