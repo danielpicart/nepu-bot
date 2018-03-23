@@ -37,10 +37,9 @@ client.on('message', message => {
       message.member.voiceChannel.join()
         .then(connection => { // Connection is an instance of VoiceConnection
           message.reply('NEPU ! Me voici !');
-          const dispatcher = connection.playFile('nepu-bot/song/nepupu.mp3');
-          dispatcher.on('error', e => {
-             // Catch any errors that may arise
-            message.channel.send('marche pas :/');
+          const nepupu = ('nepu-bot/song/nepupu.mp3');
+          const dispatcher = connection.playFile(nepupu);
+
 });
         })
         .catch(console.log);
