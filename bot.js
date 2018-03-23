@@ -38,7 +38,7 @@ client.on('message', message => {
       message.member.voiceChannel.join()
         .then(connection => { // Connection is an instance of VoiceConnection
           message.reply('NEPU ! Me voici !');
-          dispatcher;
+          dispatcher.resume();
           
         })
         .catch(console.log);
