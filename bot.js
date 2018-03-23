@@ -26,6 +26,11 @@ client.on('message', message => {
 
 client.login(process.env.BOT_TOKEN);
 
+dispatcher.on('error', e => {
+  // Catch any errors that may arise
+  message.channel.send('marche pas :/');
+});
+
 client.on('message', message => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
