@@ -2,18 +2,18 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    console.log('I am ready!');
+    console.log('Nepu les gens !');
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
+    if (message.content === 'nepu') {
+    	message.channel.send('NEPU NEPU !');
   	}
 });
 
 client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
+    if (message.content === 'nepgya') {
+    	message.reply('NEPGYAHHH !');
   	}
 });
 
