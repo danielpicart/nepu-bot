@@ -2,8 +2,6 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 
-
-
 client.on('ready', () => {
     console.log('Nepu les gens !');
 });
@@ -43,9 +41,7 @@ client.on('message', message => {
         
       message.member.voiceChannel.join()
         .then(connection => { // Connection is an instance of VoiceConnection
-          message.reply('NEPUPOOONN TIMMMMME !!!');
-          const stream = ytdl('https://youtu.be/IeIJRRw7xcg', { filter : 'audioonly' });
-          const dispatcher = connection.playStream(stream, streamOptions);
+          message.reply('NEPU !! Me voilà !');
 
 });
         })
