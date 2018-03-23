@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var dispatcher = connection.playFile('/song/nepupu.mp3');
 
 client.on('ready', () => {
     console.log('Nepu les gens !');
@@ -26,7 +25,7 @@ client.on('message', message => {
 
 
 client.login(process.env.BOT_TOKEN);
-
+var dispatcher = connection.playFile('/song/nepupu.mp3');
 client.on('message', message => {
   // Voice only works in guilds, if the message does not come from a guild,
   // we ignore it
