@@ -32,6 +32,15 @@ client.on('guildMemberAdd', member => {
     channel.send(`Nepu ! ${member}, 'nephelp' pour avoir la liste des commandes`);
 });
 
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.find('name', 'member-log');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send(`Nepu ${member} !! 'nephelp' pour avoir la liste des commandes !`);
+});
+
 //connection channel vocal
 client.on('message', message => {
   // Voice only works in guilds, if the message does not come from a guild,
