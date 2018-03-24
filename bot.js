@@ -15,14 +15,12 @@ client.on('message', message => {
     	message.channel.send('NEPGYYAAAAHHHHH !!! ヾ(@゜∇゜@)ノ');
   	}
     if (message.content === 'nephelp') {
-    	message.channel.send('Nep ! : nephelp, nepu, nepgya, nepcome, nepgit, nepwage.');
+    	message.channel.send('Nep ! : nephelp, nepu, nepgya, nepcome, nepgit.');
   	}
     if (message.content === 'nepgit') {
         message.channel.send('Nepupu ! Ici : https://tinyurl.com/ya4yy44v !');
     }
-    if (message.content === 'nepwage') {
-        message.channel.send('+wage'); //interaction avec haru
-    }
+    
 });
 
 //connection channel vocal
