@@ -6,25 +6,23 @@ client.on('ready', () => {
     console.log('Nepu les gens !');
 });
 
-//msg1
+//msg
 client.on('message', message => {
     if (message.content === 'nepu') {
-    	message.channel.send('NEP NEP !!');
+    	message.channel.send('NEPU NEPU !!');
   	}
-});
-
-//msg2
-client.on('message', message => {
     if (message.content === 'nepgya') {
     	message.channel.send('NEPGYYAAAAHHHHH !!! ヾ(@゜∇゜@)ノ');
   	}
-});
-
-//help
-client.on('message', message => {
     if (message.content === 'nephelp') {
-    	message.channel.send('nephelp, nepu, nepgya, nepcome.');
+    	message.channel.send('Nep ! : nephelp, nepu, nepgya, nepcome, nepgit, nepwage.');
   	}
+    if (message.content === 'nepgit') {
+        message.channel.send('Nepupu ! Ici : https://tinyurl.com/ya4yy44v !');
+    }
+    if (message.content === 'nepwage') {
+        message.channel.send('+wage'); //interaction avec haru
+    }
 });
 
 //connection channel vocal
@@ -48,4 +46,5 @@ client.on('message', message => {
   }
 });
 
+//NECESSAIRE NE PAS TOUCHER
 client.login(process.env.BOT_TOKEN);
