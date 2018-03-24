@@ -44,5 +44,12 @@ client.on('message', message => {
   }
 });
 
+//test audio
+client.on('message', message => {
+    if (message.content === 'nepupu') {
+        connection.playFile('nepu-bot/song/nepupu.mp3');
+    }
+});
+        
 //NECESSAIRE NE PAS TOUCHER
 client.login(process.env.BOT_TOKEN);
