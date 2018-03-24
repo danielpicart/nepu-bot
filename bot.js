@@ -47,8 +47,11 @@ client.on('message', message => {
 //test audio
 client.on('message', message => {
     if (message.content === 'nepupu') {
-        connection.playFile('nepu-bot/song/nepupu.mp3');
-    }
+        voiceChannel.join()
+        .then(connection => {
+            const dispatcher = connection.playFile('C:/Users/Discord/Desktop/music.mp3');
+         })
+        .catch(console.error);
 });
         
 //NECESSAIRE NE PAS TOUCHER
