@@ -21,7 +21,7 @@ client.on('message', message => {
         message.channel.send('Nepupu ! Ici : https://tinyurl.com/ya4yy44v !');
     }
     if (message.content === 'nepkappa') {
-        message.channel.send('', {files: ["nepu-bot/pics/nepkappa.png"]});
+        message.channel.send("", {files: ["https://drive.google.com/open?id=1JM3eDtbZ1xEMtCu0XFiwRIn6dQGYkP8s"]});
     }
     
 });
