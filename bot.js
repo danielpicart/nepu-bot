@@ -15,13 +15,13 @@ client.on('message', message => {
     	message.channel.send('NEPGYYAAAAHHHHH !!! ヾ(@゜∇゜@)ノ');
   	}
     if (message.content === 'nephelp') {
-    	message.channel.send('Nep ! : nephelp, nepu, nepgya, nepcome, nepgit.');
+    	message.channel.send('Nep ! : nephelp, nepu, nepgya, nepcome, nepgit, nepkappa.');
   	}
     if (message.content === 'nepgit') {
         message.channel.send('Nepupu ! Ici : https://tinyurl.com/ya4yy44v !');
     }
     if (message.content === 'nepkappa') {
-        message.channel.send("", { files: ["https://github.com/rouant/nepu-bot-stockage/blob/master/pics/nepkappa.png"]});
+        message.channel.send("https://github.com/rouant/nepu-bot-stockage/blob/master/pics/nepkappa.png");
     }
     
 });
