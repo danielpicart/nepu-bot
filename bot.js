@@ -15,13 +15,22 @@ client.on('message', message => {
     	message.channel.send('NEPGYYAAAAHHHHH !!! ヾ(@゜∇゜@)ノ');
   	}
     if (message.content === 'nephelp') {
-    	message.channel.send('Nep ! : nephelp, nepu, nepgya, nepcome, nepgit, nepkappa.');
+    	message.channel.send('Nep ! : nephelp, nepgit, nepu, nepgya, nepkappa, nepgud, nepthalassa, nep18+, nepcome.');
   	}
     if (message.content === 'nepgit') {
         message.channel.send('Nepupu ! Ici : https://tinyurl.com/ya4yy44v !');
     }
     if (message.content === 'nepkappa') {
         message.channel.send("", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/nepkappa.png"]});
+    }
+    if (message.content === 'nep18+') {
+        message.channel.send("( ͡° ͜ʖ ͡°)", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/vids/18+rated.mp4"]});
+    }
+    if (message.content === 'nepgud') {
+        message.channel.send("Dat's gud nepu ! [ ͡⎚ヮ ͡⎚]", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/lookin4dagudstuff.png"]});
+    }
+    if (message.content === 'nepthalassa') {
+        message.channel.send("(⌐■_■)", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/vids/nepthalassa.mp4"]});
     }
     
 });
