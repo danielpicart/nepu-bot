@@ -21,7 +21,7 @@ client.on('message', message => {
         message.channel.send('Nepupu ! Ici : https://tinyurl.com/ya4yy44v !');
     }
     if (message.content === 'nepkappa') {
-        message.channel.send("My Bot's message", {files:["https://github.com/rouant/nepu-bot-stockage/blob/master/pics/nepkappa.png?raw=true"]});
+        message.channel.send("My Bot's message", {files:["https://github.com/rouant/nepu-bot-stockage/blob/master/pics/nepkappa.png"]});
     }
     
 });
