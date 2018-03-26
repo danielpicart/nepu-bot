@@ -20,6 +20,9 @@ client.on('message', message => {
     if (message.content === 'nepgit') {
         message.channel.send('Nepupu ! Ici : https://tinyurl.com/ya4yy44v !');
     }
+    if (message.content === 'nepkappa') {
+        message.channel.send('', {files: ["nepu-bot/pics/nepkappa.png"]});
+    }
     
 });
 
