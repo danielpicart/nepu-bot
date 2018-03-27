@@ -32,8 +32,8 @@ client.on('message', message => {
     if (message.content === 'nepthalassa') {
         message.channel.send("(⌐■_■)", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/vids/nepthalassa.mp4"]});
     }
-    if (message.content === 'Do u kno da nep ?') {
-        message.channel.send(":ugandan_knuckles_vector_by_suriz: ", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/do_u_kno_da_nep.png"]});
+    if (message.content === 'nepuganda') {
+        message.channel.send("Do u kno da nep ?", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/do_u_kno_da_nep.png"]});
     }
     
 });
