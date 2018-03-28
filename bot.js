@@ -15,7 +15,7 @@ client.on('message', message => {
     	message.channel.send('NEPGYYAAAAHHHHH !!! ヾ(@゜∇゜@)ノ');
   	}
     if (message.content === 'nephelp') {
-    	message.channel.send('Nep ! : nephelp, nepgit, nepu, nepgya, nepkappa, nepgud, nepuganda, nepthalassa, neplewd, nepcome.');
+    	message.channel.send('Nep ! : nephelp, nepgit, nepu, nepgya, nepkappa, nepgud, nepuganda, nepuvult, nepthalassa, neplewd, nepcome.');
   	}
     if (message.content === 'nepgit') {
         message.channel.send('Nepupu ! Ici : https://tinyurl.com/ya4yy44v !');
@@ -36,7 +36,7 @@ client.on('message', message => {
         message.channel.send("Do u kno da nep ?", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/do_u_kno_da_nep.png"]});
     }
     if (message.content === 'nepuvult') {
-        message.channel.send("We will take Nepuzalem !!!", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/nepuvultmeme.png"]});
+        message.channel.send("We will take Nepuzalem !!! (☄ฺ◣д◢)☄ฺ", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/nepuvultmeme.png"]});
     }
     
 });
