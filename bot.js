@@ -35,6 +35,9 @@ client.on('message', message => {
     if (message.content === 'nepuganda') {
         message.channel.send("Do u kno da nep ?", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/do_u_kno_da_nep.png"]});
     }
+    if (message.content === 'nepuvult') {
+        message.channel.send("We will take Nepuzalem !!!", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/nepuvultmeme.png"]});
+    }
     
 });
 
