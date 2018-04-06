@@ -42,7 +42,8 @@ client.on('message', message => {
         message.channel.send("", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/neptroll.png"]});
     }
     if (message.content === 'nepupurge') {
-        message.channel.delete;
+        message.delete()
+        .then(msg => console.log(`message effacé`))
     }
     
 });
