@@ -56,6 +56,7 @@ client.on('message', message => {
       message.member.voiceChannel.join()
         .then(connection => { // Connection is an instance of VoiceConnection
           message.reply('Me voilà !');
+          const dispatcher = connection.playFile('https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/songs/nepupu.mp3');
 
         })
         .catch(console.log);
