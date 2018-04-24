@@ -15,7 +15,7 @@ client.on('message', message => {
     	message.channel.send('NEPGYYAAAAHHHHH !!! ヾ(@゜∇゜@)ノ');
   	}
     if (message.content === 'nephelp') {
-    	message.channel.send('Nep ! : nephelp, nepgit, nepu, nepgya, nepkappa, nepgud, nepuganda, nepuvult, neptroll, nepthalassa, neplewd, nepcome.');
+    	message.channel.send('Nep ! : nephelp, nepdodo, nepgit, nepu, nepgya, nepkappa, nepgud, nepuganda, nepuvult, neptroll, nepthalassa, neplewd, nepcome.');
   	}
     if (message.content === 'nepgit') {
         message.channel.send('Nepupu ! Ici : https://tinyurl.com/ya4yy44v !');
@@ -41,15 +41,13 @@ client.on('message', message => {
     if (message.content === 'neptroll') {
         message.channel.send("", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/neptroll.png"]});
     }
+    if (message.content === 'nepdodo') {
+        message.channel.send("Es-tu sûr de ce que tu nep ? Eteins-moi avec nepoff");       
+    }
     if (message.content === 'nepoff') {
-        message.channel.send("Es-tu sûr de ce que tu nep ? Eteins-moi avec un deuxième nepoff");
-        client.on('message', message => {
-            if (message.content === 'nepoff') {
-                message.channel.send("Nepu ! Bonne nu--Nep!");
-                heroku ps:scale web=0 --app nepubotbyshody
-                heroku ps:scale worker=0 --app nepubotbyshody
-            }
-        });
+        message.channel.send("Nepu ! Bonne nu--Nep!");
+        heroku ps:scale web=0 --app nepubotbyshody;
+        heroku ps:scale worker=0 --app nepubotbyshody;
     }
     
 });
