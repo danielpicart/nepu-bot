@@ -41,6 +41,16 @@ client.on('message', message => {
     if (message.content === 'neptroll') {
         message.channel.send("", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/neptroll.png"]});
     }
+    if (message.content === 'nepoff') {
+        message.channel.send("Es-tu sûr de ce que tu nep ? Eteins-moi avec un deuxième nepoff");
+        client.on('message', message => {
+            if (message.content === 'nepoff') {
+                message.channel.send("Nepu ! Bonne nu--Nep!");
+                heroku ps:scale web=0 --app nepubotbyshody
+                heroku ps:scale worker=0 --app nepubotbyshody
+            }
+        });
+    }
     
 });
 
