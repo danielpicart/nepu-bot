@@ -47,9 +47,6 @@ client.on('message', message => {
     if (message.content === 'neppraise') {
         message.channel.send("", {files:["https://raw.githubusercontent.com/rouant/nepu-bot-stockage/master/pics/praisenep.png"]});
     }
-    if (message.content === 'dewit') {
-        message.channel.send("yes");
-    }
 });
 
 //connection channel vocal
