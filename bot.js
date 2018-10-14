@@ -1,13 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+var nepFromMyCell = false;
 
 client.on('ready', () => {
     console.log('Nepu les gens !');
 });
 
-//nepFromMyCell
-var nepFromMyCell = false;
 //msg
 client.on('message', message => {
     if (message.content === 'nepu') {
