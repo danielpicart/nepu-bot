@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var nepFromMyCell = false;
 
 client.on('ready', () => {
     console.log('Nepu les gens !');
@@ -10,14 +9,6 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content === 'nepu') {
     	message.channel.send('NEPU NEPU !!');
-  	}
-    if (message.content === 'nepvolution') {
-        nepFromMyCell = true;
-    	while (nepFromMyCell == true) {
-        client.channels.get("481112258081193994").send("@EpicStrike5#1553 !")
-        }
-    if (message.content === 'nepstop') {
-    	nepFromMyCell = false;
   	}
     if (message.content === 'nepgya') {
     	message.channel.send('NEPGYYAAAAHHHHH !!! ヾ(@゜∇゜@)ノ');
