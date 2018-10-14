@@ -16,7 +16,7 @@ client.on('message', message => {
     if (message.content === 'nepvolution') {
         nepFromMyCell = true;
     	while (nepFromMyCell == true) {
-        message.429681341735370754.send('@EpicStrike5#1553');
+        client.channels.get("481112258081193994").send("@EpicStrike5#1553 !")
         }
     if (message.content === 'nepstop') {
     	nepFromMyCell = false;
