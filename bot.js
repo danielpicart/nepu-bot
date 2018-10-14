@@ -6,10 +6,20 @@ client.on('ready', () => {
     console.log('Nepu les gens !');
 });
 
+//nepFromMyCell
+var nepFromMyCell = false;
 //msg
 client.on('message', message => {
     if (message.content === 'nepu') {
     	message.channel.send('NEPU NEPU !!');
+  	}
+    if (message.content === 'nepvolution') {
+        nepFromMyCell = true;
+    	while (nepFromMyCell == true) {
+        message.481112258081193994.send('@EpicStrike5#1553');
+        }
+    if (message.content === 'nepstop') {
+    	nepFromMyCell = false;
   	}
     if (message.content === 'nepgya') {
     	message.channel.send('NEPGYYAAAAHHHHH !!! ヾ(@゜∇゜@)ノ');
